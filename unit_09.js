@@ -3,7 +3,10 @@
 
 
 function f1() {
+out1 = document.querySelector('.out-1');
 
+out1.style.width = '200px';
+out1.style.height = '40px';
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -12,7 +15,9 @@ document.querySelector('.b-1').onclick = f1;
 // По нажатию кнопки b-2 запускайте функцию f2, которая присваивает блоку out-2 класс .bg-2.
 
 function f2() {
+    out2 =  document.querySelector('.out-2');
 
+    out2.classList.add('bg-2');
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -22,7 +27,9 @@ document.querySelector('.b-2').onclick = f2;
 // По нажатию кнопки b-3 запускайте функцию f3, которая удаляет у блока out-3 класс .bg-3.
 
 function f3() {
+    out3 =  document.querySelector('.out-3');
 
+    out3.classList.remove('bg-3');
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -32,7 +39,9 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
+    out4 =  document.querySelector('.out-4');
 
+    out4.classList.toggle('bg-4');
 }
 
 document.querySelector('.b-4').onclick = f4;
