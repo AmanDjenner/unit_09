@@ -51,6 +51,14 @@ document.querySelector('.b-4').onclick = f4;
 // По нажатию b-5 запускайте функцию f5, которая проверяет наличие класса bg-4 у блока out-4 (да, именно bg-4 у out-4 ). Результат - true или false, выводите в out-5.
 
 function f5() {
+    out4 =  document.querySelector('.out-4');
+    out5 = document.querySelector('.out-5');
+
+    if(out4.getAttribute("class") == "out-4 bg-4"){
+        out5.innerText = true;  
+    }else{
+        out5.innerText = false;
+    }
 
 }
 
